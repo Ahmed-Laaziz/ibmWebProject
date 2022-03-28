@@ -5,7 +5,7 @@ function updateTextInput(val) {
 
 function calcul() {
   var html = document.getElementById("input1").value;
-    if (html == 0){
+    if (html <= 0){
     alert ("Enter a positive number");
   }
   else{
