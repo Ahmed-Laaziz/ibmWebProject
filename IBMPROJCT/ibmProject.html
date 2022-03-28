@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>IB Project</title>
+    <script type="text/javascript" src= "C:\Users\ADMIN\Desktop\IBMPROJCT\ibmProject.js">
+    <link rel="stylesheet" href="C:\Users\ADMIN\Desktop\IBMPROJCT\ibmProject.css">
+
+    </script>
+  </head>
+  <body>
+
+    <style media="screen">
+      body{
+        background-color: #6A6768;
+
+      }
+
+      h1{
+        color:#6A6768;
+      }
+      p{
+        font-size:20px;
+      }
+      .div1{
+        background-color: white;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding-left:40px;
+        padding-bottom:40px;
+        border: 5px solid black;
+        box-shadow: 10px 5px 5px black;
+        border-radius:25px;
+      }
+      h1{
+        text-align:center;
+      }
+
+    </style>
+    <div class="div1">
+
+    <h1>Simple interest calculator</h1>
+    <table>
+      <tr>
+        <td>
+          <p>Amount</p>
+        </td>
+        <td>
+          <input type="text" name="" value="" id = "input1">
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Interest Rate</p>
+        </td>
+
+        <td>
+          <input type="range" name="rangeInput" min="0" max="100" value = "3.5" onchange="updateTextInput(this.value);">
+<input type="text" id="textInput" value="3.5" style="border:white" >
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>No. years</p>
+        </td>
+        <td>
+          <input type="number" name="" value="1" style="width:40px;" max="20" min="1" id = "year1">
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <button type="button" name="button" onclick="calcul()">Compute interest</button>
+        </td>
+
+        <td>
+
+        </td>
+      </tr>
+    </table>
+
+    <br>
+    <div class="">
+    <p id = "depose"></p>
+    <p id = "rate" ></p>
+    <p id = "amount"></p>
+    <p id = "year"></p>
+    </div>
+
+    <p style="padding-left:0px;">© Evryone Can Get Rich</p>
+    </div>
+  </body>
+</html>
