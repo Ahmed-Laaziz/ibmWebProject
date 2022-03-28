@@ -5,6 +5,11 @@ function updateTextInput(val) {
 
 function calcul() {
   var html = document.getElementById("input1").value;
+    if (html == 0){
+    alert ("Enter a positive number");
+  }
+  else{
+  document.getElementById("depose").innerHTML = "if you deposit "+ html;
   document.getElementById("depose").innerHTML = "if you deposit "+ html;
 
   var html1 = document.getElementById("textInput").value;
@@ -14,7 +19,7 @@ function calcul() {
   document.getElementById("year").innerHTML = "in the year "+ (parseInt(html2) + 2022);
 
 
-    document.getElementById("amount").innerHTML = " You will receive an amount of "+ (parseInt(html) * parseInt(html1)/100 * parseInt(html2));
+    document.getElementById("amount").innerHTML = " You will receive an amount of "+ (parseInt(html) * parseInt(html1)/100 * parseInt(html2));}
 
 
   
